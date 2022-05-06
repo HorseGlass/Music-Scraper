@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client": "cd client && npm run dev",
+    "client-dev": "cd client && npm run dev",
+    "client-prod": "cd client && npm run start",
     "server": "cd server && nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client-dev\"",
+    "production": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client-prod\""
   },
   "keywords": [],
   "author": "",
