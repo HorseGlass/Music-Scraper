@@ -1,19 +1,28 @@
 {
-  "name": "musicsite",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "client-dev": "cd client && npm run dev",
-    "client-prod": "cd client && npm run start",
-    "server": "cd server && nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client-dev\"",
-    "production": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client-prod\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "concurrently": "^7.1.0"
+    "next": "12.1.6",
+    "puppeteer": "^14.2.1",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.31",
+    "@types/react": "18.0.8",
+    "@types/react-dom": "18.0.3",
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24",
+    "typescript": "4.6.4"
   }
 }

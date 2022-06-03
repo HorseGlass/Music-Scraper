@@ -17,8 +17,7 @@ body > div:first-child {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  @apply text-sky-500 hover:text-sky-600 hover:underline;
 }
 
 * {
@@ -26,14 +25,14 @@ a {
 }
 
 input {
-  @apply rounded-md bg-neutral-100 text-neutral-900 text-lg p-1 text-center border-none shadow w-[300px];
+  @apply rounded-md bg-neutral-100 text-neutral-900 text-lg p-1 text-center border-none shadow w-full sm:w-[500px];
   @apply focus:outline-dashed outline-1 outline-neutral-900;
-  @apply dark:bg-neutral-800 dark:text-neutral-50 dark:outline-neutral-50;
+  @apply dark:bg-neutral-700 dark:text-neutral-50 dark:outline-neutral-50;
 }
 
 button {
-  @apply bg-sky-500 rounded-md p-1 px-4 font-light transition-colors;
-  @apply hover:bg-sky-600;
+  @apply bg-neutral-200 dark:bg-neutral-800 rounded-md pl-10 pr-10 pt-2 pb-2 px-4 font-light transition-colors border border-neutral-200 dark:border-neutral-800;
+  @apply hover:border-sky-500 hover:text-sky-500;
 }
 
 
